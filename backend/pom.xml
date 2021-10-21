@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.devsuperior</groupId>
-	<artifactId>dslearnbds</artifactId>
+	<artifactId>dslearn</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dslearnbds</name>
+	<name>dslearn</name>
 	<description>DSLearn Bootcamp</description>
 
 	<properties>

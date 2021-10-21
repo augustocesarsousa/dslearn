@@ -1,5 +1,6 @@
 package com.devsuperior.dslearn.entities;
 
+import java.io.Serializable;
 import java.time.Instant;
 
 import javax.persistence.Column;
@@ -11,7 +12,9 @@ import com.devsuperior.dslearn.entities.pk.EnrollmentPK;
 
 @Entity
 @Table(name = "tb_enrollment")
-public class Enrollment {
+public class Enrollment implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	
 	@EmbeddedId
 	private EnrollmentPK id = new EnrollmentPK();
