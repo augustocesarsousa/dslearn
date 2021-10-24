@@ -28,10 +28,8 @@ public class UserService implements UserDetailsService{
 	private AuthService authService;
 
 	@Transactional(readOnly = true)
-	public UserDTO findById(Long id) {
-		
-		authService.validateSelfOrAdmin(id);
-		
+	public UserDTO findById(Long id) {		
+		authService.validateSelfOrAdmin(id);		
 		Optional<User> obj = repository.findById(id);
 		User entity = obj.orElseThrow(() -> new ResourceNotFoundException("Usuário não encotrado!"));
 		return new UserDTO(entity);
